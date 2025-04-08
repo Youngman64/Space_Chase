@@ -1,0 +1,10 @@
+Directions to test Space Chase
+
+Ensure Python and Pygame are installed (pip install pygame).
+
+Navigate to project directory.
+Run the game script:
+python space_chase.py
+
+Gameplay Testing:
+Verify spaceship responds correctly to arrow keys or WASD keys.
