@@ -7,7 +7,7 @@ Run the game script:
 python space_chase.py
 
 Gameplay Testing:
-Verify spaceship responds correctly to arrow keys or WASD keys
+Verify the player responds correctly WASD keys by moving to around the screen when the keys are pressed
 Confirm the game ends on collision with an enemy (future feature)
 Confirm the game ends on collision with an enemy projectile (future feature)
 Make sure that when you collect a credit the number of credits increases in the top left of the screen (future feature)
