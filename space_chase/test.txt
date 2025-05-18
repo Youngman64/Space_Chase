@@ -3,12 +3,16 @@ Directions to test Space Chase
 Ensure Python and Pygame are installed (pip install pygame).
 
 Navigate to project directory.
+Download space_chase_assets folder
+Download space_chase.py
+Make sure space_chase.py and the space_chase_assets folder are located in the same folder before running
 Run the game script:
 python space_chase.py
 
 Gameplay Testing:
-Verify the player responds correctly WASD keys by moving to around the screen when the keys are pressed
-Confirm the game ends on collision with an enemy (future feature)
-Confirm the game ends on collision with an enemy projectile (future feature)
-Make sure that when you collect a credit the number of credits increases in the top left of the screen (future feature)
-Ensure that when you collide with the rocketship it takes you to the next level (future feature)
+Test out the 'How to Play' screen by pressing enter on the 'How to Play' tact. You can move your selection with the arrow keys. Make sure it describes the objective of the game and the controls.
+Next check out the 'Character Selection' screen. You can select your character with enter and switch between each character by using the arow keys.
+Once you have selected a character verify the player responds correctly arrow keys by moving around the screen when the keys are pressed. Make sure credits are collected when your character runs over them.
+Make sure each character's abilities work. Press space once the ability meter is full in the bottom left of the screen. Electro should get a speed boost. Vermus should have 5 seconds of invincibility where the enemy can't kill them. Zicro should become a coin magnet that picks up coins from a further distance.
+Confirm the game ends on collision with an enemy.
+Ensure that when you collide with the rocketship it takes you to the next level.
