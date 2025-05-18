@@ -1,9 +1,0 @@
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 500
-FPS = 60
-SPEED = 5
-
-#colors
-ORANGE = (255, 165, 0)
-PINK = (255, 163, 255)
-RED = (255, 0 , 0)
