@@ -47,6 +47,7 @@ enemy_img = pygame.transform.scale(enemy_img, (100, 100))
 TITLE, HOW_TO_PLAY, CHARACTER_SELECT, GAME = "title", "how_to_play", "character_select", "game"
 screen_state = TITLE
 
+# Source: Based on code pattern proposed by ChatGPT (OpenAI), May 2025.
 def draw_menu(screen, options, selected_index, y_start):
     font = pygame.font.Font(None, 48)
     for i, text in enumerate(options):
@@ -56,6 +57,7 @@ def draw_menu(screen, options, selected_index, y_start):
         screen.blit(rendered, rect)
 
 #Title Screen
+# Source: Adapted with help from ChatGPT (OpenAI), May 2025.
 def title_screen():
     global screen_state
     selected = 0
@@ -143,6 +145,7 @@ def update_screen_size():
     background_img = pygame.transform.scale(pygame.image.load(os.path.join(character_folder, "background_1.png")), screen.get_size())
 
 #function for updating character positions
+# Source: Logic refined using suggestions from ChatGPT (OpenAI), May 2025.
 def update_character_positions():
     global char_positions
     char_positions = [
@@ -215,6 +218,7 @@ def main_menu():
         clock.tick(FPS)
 
 #Game loop with levels
+# Structure inspired by patterns suggested by ChatGPT (OpenAI), May 202
 def game_loop(player_index):
     global background_img, high_score
     player_img = game_character_scaled[player_index]
@@ -237,6 +241,7 @@ def game_loop(player_index):
     pygame.mixer.music.play(-1)
 
     #rainbow invincibility
+    # Source: Generated with help from ChatGPT (OpenAI), May 2025.
     rainbow_colors = [(255,0,0), (255,127,0), (255,255,0), (0,255,0), (0,0,255), (75,0,130), (139,0,255)]
     def apply_rainbow_tint(image, frame):
         tint_color = rainbow_colors[frame % len(rainbow_colors)]
@@ -246,6 +251,8 @@ def game_loop(player_index):
         tinted_image.blit(tint_surface, (0, 0), special_flags=pygame.BLEND_RGBA_ADD)
         return tinted_image
     # Magnet effect for Zicro
+    # Source: Adapted from ChatGPT (OpenAI), May 2025.
+
     MAGNET_RADIUS = 150
 
     def apply_magnet_effect(player_x, player_y, credit_positions):
